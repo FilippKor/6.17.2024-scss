@@ -1,0 +1,16 @@
+.box {
+  width: 1000px;
+  height: 200px;
+  background: red;
+}
+.box-ul {
+  background: rgba(255, 255, 0, 0.408);
+  width: 800px;
+  height: 200px;
+}
+.box-ul-li {
+  color: yellow;
+}
+.box-ul-li:hover {
+  color: green;
+}

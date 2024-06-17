@@ -1,0 +1,25 @@
+$mainColor:red;
+$greyollow:rgba(255, 255, 0, 0.408);
+$yellow:yellow;
+$green:green;
+// %height{
+//     height: 200px;
+// }
+@mixin width($px,$Heightpx){
+    width: $px;
+    height: $Heightpx;
+}
+.box{
+    @include width(1000px,200px);
+    background: $mainColor;
+    &-ul{
+        background:$greyollow;
+        @include width(800px,200px);
+        &-li{
+            color: $yellow;
+        }
+        &-li:hover{
+            color: $green;
+        }
+    }
+}
